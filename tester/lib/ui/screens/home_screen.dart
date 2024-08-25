@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tester/ui/screens/login_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   final double imageHeight;
@@ -35,7 +36,10 @@ class HomeScreen extends StatelessWidget {
                   IconButton(
                     icon: Icon(Icons.arrow_left),
                     onPressed: () {
-                      Navigator.of(context).pop();
+                      // Navigator.of(context).pop();
+                      Navigator.of(context).pushReplacement(
+                        MaterialPageRoute(builder: (context) => LoginScreen()),
+                      );
                     },
                   ),
                   IconButton(
