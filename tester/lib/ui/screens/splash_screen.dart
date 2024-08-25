@@ -12,7 +12,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
-    Timer(Duration(seconds: 4), () {
+    Timer(Duration(seconds: 5), () {
       Navigator.of(context).pushReplacement(
         MaterialPageRoute(builder: (context) => LoginScreen()),
       );
@@ -32,7 +32,7 @@ class _SplashScreenState extends State<SplashScreen> {
         ),
         child: Column(
           children: [
-            Spacer(flex: 2),
+            Spacer(flex: 3),
             Align(
               alignment: Alignment.center,
               child: SizedBox(
